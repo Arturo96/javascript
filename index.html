@@ -8,10 +8,22 @@
     <title>Practicas con Javascript</title>
 </head>
 <body>
-    <div id="caja">Texto de prueba para el DOM</div>
-    <h3 class="rojo">Texto 1</h3>
-    <h3 class="rojo">Texto 2</h3>
-    <h3 class="rojo">Texto 3</h3>
-    <script src="js/04-operacionesArray.js"></script>
+    <form action="" id="sendData" method="post">
+        <label>Nombres:
+            <input type="text" id="nombres">
+        </label>
+        <label>Apellidos:
+            <input type="text" id="apellidos">
+        </label>
+        <label>Edad:
+            <input type="number" min='10' max='110' id="edad">
+        </label>
+        <input type="submit"  value="Enviar">
+        <input type="button" id="btnMostrar" value="Mostrar datos">
+    </form>
+    <div id="mostrar-datos">
+
+    </div>
+    <script src="js/showInfo.js"></script>
 </body>
 </html>
